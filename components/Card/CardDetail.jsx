@@ -1,7 +1,7 @@
 export default function CardDetail(props) {
   return (
     <div
-      className={`w-3/12 rounded-lg shadow-lg overflow-hidden ${
+      className={`w-3/12 rounded-lg shadow-2xl overflow-hidden ${
         props.className && props.className
       }`}
     >

@@ -11,7 +11,7 @@ import FooterFull from "../../components/Footer/FooterFull";
 
 export default function detail() {
   return (
-    <div>
+    <div className="bg-gray-50">
       <HeaderDetail />
       <Spacer className={"h-20"} />
       <div className="container px-24">
