@@ -1,6 +1,6 @@
 export default function Card() {
   return (
-    <div className="w-4/12 rounded-lg shadow-lg overflow-hidden">
+    <div className="w-4/12 rounded-lg shadow-lg overflow-hidden text-gray-700">
       <div className="h-52 bg-green-500"></div>
       <div className="space-y-6 p-6 bg-white">
         <h4>Subtite</h4>
