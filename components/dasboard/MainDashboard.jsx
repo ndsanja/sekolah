@@ -1,21 +1,26 @@
-import React from "react";
 import LeftBar from "./LeftBar";
 import MainContent from "./MainContent";
 import RightBar from "./RightBar";
+import { useState } from "react";
 
 export default function MainDashboard() {
+  const [leftOpen, isLeftOpen] = useState(true);
+  const [rightOpen, isRightOpen] = useState(true);
+
+  const toogleLeft = () => isLeftOpen(!leftOpen);
+  const toogleRight = () => isRightOpen(!rightOpen);
+
   return (
-    <div>
-      <div className="flex justify-between h-screen bg-gray-200">
-        <LeftBar />
-        <button className="text-xs bg-gray-100 p-1 h-8 w-8 focus:outline-none">
-          |||
-        </button>
-        <MainContent />
-        <button className="text-xs bg-gray-100 p-1 h-8 w-8 focus:outline-none">
-          |||
-        </button>
-        <RightBar />
+    <div className="h-screen overflow-y-scroll">
+      <div className="relative flex justify-between container px-4">
+        <LeftBar leftOpen={leftOpen} />
+        <MainContent
+          toogleLeft={toogleLeft}
+          leftOpen={leftOpen}
+          toogleRight={toogleRight}
+          rightOpen={rightOpen}
+        />
+        <RightBar rightOpen={rightOpen} />
       </div>
     </div>
   );

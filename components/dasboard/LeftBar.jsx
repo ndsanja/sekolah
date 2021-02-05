@@ -1,8 +1,12 @@
 import React from "react";
 
-export default function LeftBar() {
+export default function LeftBar({ leftOpen }) {
   return (
-    <div className="p-4 space-y-8 bg-gray-50 text-sm leading-relaxed  w-3/12 overflow-y-auto">
+    <div
+      className={`${
+        leftOpen ? "w-3/12" : "hidden"
+      } sticky top-0 p-4 h-screen space-y-8 text-sm leading-relaxed  overflow-y-auto`}
+    >
       <div>
         <h1 className="uppercase font-medium text-gray-900 text-sm mb-3 tracking-wide">
           Getting Started

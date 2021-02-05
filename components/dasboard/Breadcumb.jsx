@@ -1,6 +1,6 @@
 export default function Breadcumb() {
   return (
-    <div className="bg-gray-50 text-xs">
+    <div className="text-xs">
       <div className="flex items-center justify-between py-2 px-4 border-b  border-gray-300 sticky">
         <div className="flex items-center space-x-4">
           <div className="text-blue-800 font-medium">Machine Learning /</div>

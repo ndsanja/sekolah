@@ -3,22 +3,22 @@ import MainDashboard from "../dasboard/MainDashboard";
 
 export default function HeaderDashboard() {
   return (
-    <div>
-      <div className="fixed top-0 right-0 left-0 container px-4">
-        <div>
-          <div className="flex items-center justify-between py-2 px-4 border-b bg-gray-50 border-gray-300">
+    <div clasName="fixed top-0 right-0 left-0 ">
+      <div className=" fixed top-0 right-0 left-0 ">
+        <div className="container px-4 relative">
+          <div className="flex items-center justify-between py-3 px-4 border-b border-gray-300">
             <div className="flex items-center space-x-4">
-              <h1 className="font-semibold text-blue-800">
+              <h1 className="font-semibold text-blue-800 text-xl">
                 SMA NEGERI 1 SRENGAT
               </h1>
-              <button className="px-2 py-1 bg-blue-800 focus:outline-none text-white text-xs rounded">
+              <button className="px-2.5 py-1.5 bg-blue-800 focus:outline-none text-white text-sm rounded">
                 Explore
               </button>
               <div>
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="px-2 py-1 focus:outline-none rounded-l border border-gray-500"
+                  className="px-2 py-1 focus:outline-none rounded-l border border-opacity-50 border-gray-500"
                 />
                 <button className="px-1 py-1 bg-blue-800 text-white border border-gray-500 focus:outline-none rounded rounded-l-none">
                   O
@@ -26,6 +26,20 @@ export default function HeaderDashboard() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
+              <svg
+                className="h-6 w-6 text-gray-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              </svg>
               <a href="#">
                 <svg
                   className="h-6 w-6 text-gray-700"
