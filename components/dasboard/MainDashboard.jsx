@@ -12,7 +12,7 @@ export default function MainDashboard() {
 
   return (
     <div className="h-screen overflow-y-scroll">
-      <div className="relative flex justify-between container px-4">
+      <div className="relative flex justify-between lg:container lg:px-4">
         <LeftBar leftOpen={leftOpen} />
         <MainContent
           toogleLeft={toogleLeft}

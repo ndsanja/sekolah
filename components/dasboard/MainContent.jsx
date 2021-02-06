@@ -8,11 +8,13 @@ export default function MainContent({
     <>
       <button
         onClick={toogleLeft}
-        className="sticky top-0 text-xs p-1 h-8 w-8 hover:bg-blue-100 focus:outline-none"
+        className={
+          "hidden lg:block sticky top-0 text-xs p-1 h-6 w-6 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 focus:outline-none"
+        }
       >
         {leftOpen ? (
           <svg
-            className="h-4 w-4 text-gray-700"
+            className="h-4 w-4 text-gray-700 dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -25,7 +27,7 @@ export default function MainContent({
           </svg>
         ) : (
           <svg
-            className="h-4 w-4 text-gray-700"
+            className="h-4 w-4 text-gray-700 dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -45,9 +47,9 @@ export default function MainContent({
       </button>
       <div
         className={`
-        ${leftOpen ? "w-7/12" : "w-10/12"} 
-        ${rightOpen ? "w-7/12" : "w-10/12"} 
-        space-y-4 text-gray-700 font-light text-justify  p-8 shadow-2xl transition-all duration-75`}
+        ${leftOpen ? "w-12/12 lg:w-7/12" : "lg:w-10/12"} 
+        ${rightOpen ? "w-12/12 sm:w-9/12 lg:w-7/12" : "lg:w-10/12"} 
+        space-y-4 text-gray-700 dark:text-gray-300 font-light text-justify  p-4 sm:p-6 lg:p-8 lg:shadow-2xl transition-all duration-75`}
       >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -148,11 +150,11 @@ export default function MainContent({
       </div>
       <button
         onClick={toogleRight}
-        className="sticky top-0 text-xs p-1 h-8 w-8 hover:bg-blue-100 focus:outline-none"
+        className={`hidden lg:block sticky top-0 text-xs p-1 h-6 w-6 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 focus:outline-none`}
       >
         {rightOpen ? (
           <svg
-            className="h-4 w-4 text-gray-700"
+            className="h-4 w-4 text-gray- dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -170,7 +172,7 @@ export default function MainContent({
           </svg>
         ) : (
           <svg
-            className="h-4 w-4 text-gray-700"
+            className="h-4 w-4 text-gray-700 dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
