@@ -144,6 +144,7 @@ export default function HeaderDashboard() {
             open={open}
             selectTheme={selectTheme}
             dark={dark}
+            toogleDark={toogleDark}
           />
         </div>
         <MainDashboard />
