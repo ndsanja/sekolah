@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Breadcumb from "../dasboard/Breadcumb";
 import MainDashboard from "../dasboard/MainDashboard";
+import Link from "next/link";
 import * as Icon from "../Icon";
 
 export default function HeaderDashboard() {
@@ -25,7 +26,7 @@ export default function HeaderDashboard() {
   }, []);
 
   return (
-    <div clasName="fixed top-0 right-0 left-0 ">
+    <div className="fixed top-0 right-0 left-0 ">
       <div className=" fixed top-0 right-0 left-0 ">
         <div className="lg:container lg:px-4 relative">
           <div
@@ -39,9 +40,11 @@ export default function HeaderDashboard() {
               <h1 className="font-semibold text-blue-800 dark:text-blue-500 text-xl">
                 SMA NEGERI 1 SRENGAT
               </h1>
-              <button className="px-2.5 py-1.5 bg-blue-800 dark:bg-blue-500 focus:outline-none text-white dark:from-gray-500 text-sm rounded">
-                Explore
-              </button>
+              <Link href="/kursus">
+                <a className="px-2.5 py-1.5 bg-blue-800 dark:bg-blue-500 focus:outline-none text-white dark:from-gray-500 text-sm rounded">
+                  Explore
+                </a>
+              </Link>
               <div className="flex items-center">
                 <input
                   type="text"

@@ -10,21 +10,20 @@ export default function index() {
     <div className="bg-gray-50">
       <Header />
       <div className="pt-10">
-        <div className="container px-24">
+        <div className="container px-4 sm:px-8 lg:px-24">
           <SectionTitle title={"Featured"} btnTitle={"View All Course"} />
           <Spacer className={"h-10"} />
-          <div className="flex space-x-8">
+          <div className="grid sm:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8">
             <Card />
             <Card />
             <Card />
           </div>
         </div>
         <Spacer className={"h-20"} />
-        <div className="container px-24">
+        <div className="container px-4 sm:px-8 lg:px-24">
           <SectionTitle title={"Recently Added"} btnTitle={"View All Course"} />
           <Spacer className={"h-10"} />
-          <div className="flex space-x-8">
-            <Card />
+          <div className="grid sm:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8">
             <Card />
             <Card />
           </div>
@@ -32,20 +31,19 @@ export default function index() {
         <Spacer className={"h-20"} />
         <Banner />
         <Spacer className={"h-20"} />
-        <div className="container px-24">
+        <div className="container px-4 sm:px-8 lg:px-24">
           <SectionTitle title={"Trending"} btnTitle={"View All Course"} />
           <Spacer className={"h-10"} />
-          <div className="flex space-x-8">
-            <Card />
-            <Card />
+          <div className="grid sm:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8">
             <Card />
           </div>
         </div>
         <Spacer className={"h-20"} />
-        <div className="container px-24">
+        <div className="container px-4 sm:px-8 lg:px-24">
           <SectionTitle title={"Starting Soon"} btnTitle={"View All Course"} />
           <Spacer className={"h-10"} />
-          <div className="flex space-x-8">
+          <div className="grid sm:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-8">
+            <Card />
             <Card />
             <Card />
             <Card />
