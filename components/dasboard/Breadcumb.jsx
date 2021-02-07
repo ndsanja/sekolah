@@ -1,3 +1,5 @@
+import * as Icon from "../Icon";
+
 export default function Breadcumb({
   toogleOpen,
   open,
@@ -10,20 +12,7 @@ export default function Breadcumb({
       <div className="flex items-center justify-between py-2 lg:py-1 sm:px-6 px-4 border-b  border-gray-300 dark:border-gray-700 sticky">
         <div className="flex items-center space-x-2 lg:space-x-4">
           <button className="cursor-pointer focus:outline-none">
-            <svg
-              className="text-gray-700 h-6 w-6 lg:hidden dark:text-white ring-1 ring-gray-700 dark:ring-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+            <Icon.Menu className="text-gray-700 h-6 w-6 lg:hidden dark:text-white ring-1 ring-gray-700 dark:ring-white" />
           </button>
           <a
             href="#"
@@ -48,40 +37,14 @@ export default function Breadcumb({
                 onClick={() => selectTheme("dark")}
                 className="lg:hidden flex items-center justify-center cursor-pointer focus:outline-none"
               >
-                <svg
-                  className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
+                <Icon.Dark className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300" />
               </button>
             ) : (
               <button
                 onClick={() => selectTheme("light")}
                 className="lg:hidden flex items-center justify-center cursor-pointer focus:outline-none"
               >
-                <svg
-                  className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
+                <Icon.Light className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300" />
               </button>
             )}
           </div>
@@ -98,31 +61,9 @@ export default function Breadcumb({
             className="hidden lg:block cursor-pointer rounded-full hover:bg-blue-100 dark:hover:bg-blue-800 bg-blue-50 p-1 dark:bg-blue-900"
           >
             {open ? (
-              <svg
-                className="h-4 w-4 text-gray-700 dark:text-blue-100"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <Icon.Up className="h-4 w-4 text-gray-700 dark:text-blue-100" />
             ) : (
-              <svg
-                className="h-4 w-4 text-gray-700 dark:text-blue-100"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <Icon.Down className="h-4 w-4 text-gray-700 dark:text-blue-100" />
             )}
           </div>
           <a
