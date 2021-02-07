@@ -4,7 +4,7 @@ import MainDashboard from "../dasboard/MainDashboard";
 
 export default function HeaderDashboard() {
   const [open, isOpen] = useState(true);
-  const [dark, setDark] = useState(localStorage.getItem("theme"));
+  const [dark, setDark] = useState(selectTheme);
 
   const toogleDark = () => setDark(!dark);
   const toogleOpen = () => isOpen(!open);
