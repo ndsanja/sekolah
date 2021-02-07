@@ -1,8 +1,10 @@
 export default function Banner() {
   return (
     <div className="bg-red-900 py-12">
-      <div className="flex space-x-6 items-center justify-center ">
-        <h1 className="text-white text-xl">Get Update On New Course</h1>
+      <div className="flex-col lg:flex lg:flex-row lg:space-x-6 items-center justify-center text-center space-y-8 lg:space-y-0 ">
+        <h1 className="text-white text-xl text-center">
+          Get Update On New Course
+        </h1>
         <input
           type="text"
           placeholder="Email Addres"

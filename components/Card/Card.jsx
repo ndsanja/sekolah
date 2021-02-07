@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Card() {
   return (
     <div className="rounded-lg shadow-lg overflow-hidden text-gray-700">
@@ -12,9 +14,13 @@ export default function Card() {
         <h4 className="uppercase text-gray-600 font-medium hover:underline cursor-pointer">
           Nature
         </h4>
-        <h1 className="text-red-800 text-xl sm:text-2xl font-medium hover:underline cursor-pointer">
-          Principles of Biochemistry
-        </h1>
+        <Link href="/kursus/detail">
+          <a>
+            <h1 className="text-red-800 text-xl sm:text-2xl font-medium hover:underline cursor-pointer">
+              Principles of Biochemistry
+            </h1>
+          </a>
+        </Link>
         <p className="text-gray-600">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea dolores
           error magni labore tenetur tempora beatae veniam consequatur corrupti?

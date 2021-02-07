@@ -2,8 +2,8 @@ import React from "react";
 
 export default function GoalSection() {
   return (
-    <div className="flex space-x-8">
-      <ul className="w-1/2 list-outside list-disc space-y-4">
+    <div className="lg:flex lg:space-x-8 space-y-4 lg:space-y-0">
+      <ul className="lg:w-1/2 list-inside lg:list-outside list-disc space-y-4">
         <li>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
           deleniti!
@@ -17,7 +17,7 @@ export default function GoalSection() {
           deleniti!
         </li>
       </ul>
-      <ul className="w-1/2 list-outside list-disc space-y-4">
+      <ul className="lg:w-1/2 list-inside lg:list-outside list-disc space-y-4">
         <li>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
           deleniti!
