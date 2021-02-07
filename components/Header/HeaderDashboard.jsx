@@ -14,14 +14,15 @@ export default function HeaderDashboard() {
     html.classList.add(localStorage.getItem("theme"));
     if (value == "dark") {
       html.classList.remove("light");
+      setDark((dark = true));
     } else {
       html.classList.remove("dark");
+      setDark((dark = false));
     }
   };
 
   useEffect(() => {
     document.querySelector("html").classList.add(localStorage.getItem("theme"));
-    toogleDark();
   }, []);
 
   return (
