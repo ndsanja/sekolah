@@ -4,7 +4,7 @@ import MainDashboard from "../dasboard/MainDashboard";
 
 export default function HeaderDashboard() {
   const [open, isOpen] = useState(true);
-  const [dark, setDark] = useState(null);
+  const [dark, setDark] = useState(localStorage.getItem("theme"));
 
   const toogleDark = () => setDark(!dark);
   const toogleOpen = () => isOpen(!open);
@@ -14,10 +14,8 @@ export default function HeaderDashboard() {
     html.classList.add(localStorage.getItem("theme"));
     if (value == "dark") {
       html.classList.remove("light");
-      setDark((dark = false));
     } else {
       html.classList.remove("dark");
-      setDark((dark = true));
     }
   };
 
