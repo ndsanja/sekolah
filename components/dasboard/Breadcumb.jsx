@@ -1,4 +1,10 @@
-export default function Breadcumb({ toogleOpen, open, selectTheme }) {
+export default function Breadcumb({
+  toogleOpen,
+  open,
+  selectTheme,
+  dark,
+  toogleDark,
+}) {
   return (
     <div className="text-xs">
       <div className="flex items-center justify-between py-2 lg:py-1 sm:px-6 px-4 border-b  border-gray-300 dark:border-gray-700 sticky">
@@ -35,46 +41,50 @@ export default function Breadcumb({ toogleOpen, open, selectTheme }) {
             Welcome to Machine Learning
           </div>
         </div>
-        <div className="flex items-center  space-x-2 sm:space-x-4 text-gray-700 font-bold">
-          <button
-            onClick={() => selectTheme("light")}
-            className="lg:hidden flex items-center justify-center cursor-pointer focus:outline-none"
-          >
-            <svg
-              className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-              />
-            </svg>
-          </button>
-
-          <button
-            onClick={() => selectTheme("dark")}
-            className="lg:hidden flex items-center justify-center cursor-pointer focus:outline-none"
-          >
-            <svg
-              className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-              />
-            </svg>
-          </button>
+        <div className="flex items-center space-x-4 text-gray-700 font-bold">
+          <div onClick={toogleDark}>
+            {dark ? (
+              <button
+                onClick={() => selectTheme("dark")}
+                className="lg:hidden flex items-center justify-center cursor-pointer focus:outline-none"
+              >
+                <svg
+                  className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                </svg>
+              </button>
+            ) : (
+              <button
+                onClick={() => selectTheme("light")}
+                className="lg:hidden flex items-center justify-center cursor-pointer focus:outline-none"
+              >
+                <svg
+                  className="h-6 w-6 text-gray-600  dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
 
           <div className="flex lg:hidden cursor-pointer">
             <img
