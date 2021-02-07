@@ -12,14 +12,17 @@ export default function Breadcumb({
     <div className="text-xs">
       <div className="flex items-center justify-between py-2 lg:py-1 sm:px-6 px-4 border-b  border-gray-300 dark:border-gray-700 sticky">
         <div className="flex items-center space-x-2 lg:space-x-4">
-          <a className="cursor-pointer focus:outline-none">
-            <Icon.Menu className="text-gray-700 h-6 w-6 lg:hidden dark:text-white ring-1 ring-gray-700 dark:ring-white" />
-          </a>
           <Link href="/kursus">
-            <a className="hidden sm:block text-blue-800 dark:text-blue-500 hover:text-blue-600 dark:hover:text-blue-200 font-semibold">
-              Machine Learning /
+            <a className="cursor-pointer focus:outline-none">
+              <Icon.Menu className="text-gray-700 h-6 w-6 lg:hidden dark:text-white ring-1 ring-gray-700 dark:ring-white" />
             </a>
           </Link>
+          <a
+            href="#"
+            className="hidden sm:block text-blue-800 dark:text-blue-500 hover:text-blue-600 dark:hover:text-blue-200 font-semibold"
+          >
+            Machine Learning /
+          </a>
           <a
             href="#"
             className="hidden sm:block text-blue-800 dark:text-blue-500 hover:text-blue-600 dark:hover:text-blue-200 font-semibold"
