@@ -21,7 +21,8 @@ export default function HeaderDashboard() {
 
   useEffect(() => {
     document.querySelector("html").classList.add(localStorage.getItem("theme"));
-  });
+    toogleDark();
+  }, []);
 
   return (
     <div clasName="fixed top-0 right-0 left-0 ">
