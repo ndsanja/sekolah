@@ -7,8 +7,8 @@ export default function HeaderDetail() {
   return (
     <>
       <div className="bg-bluePrimary">
-        <div className="container relative p-4 sm:px-8 lg:px-24">
-          <div className="container bg-bluePrimary px-4 sm:px-8 lg:px-24 flex items-center justify-between py-3 fixed top-0 left-0 right-0 z-10">
+        <div className="bg-bluePrimary fixed top-0 left-0 right-0 z-10">
+          <div className="container  px-4 sm:px-8 lg:px-24 flex items-center justify-between py-3">
             <div className="flex space-x-4 items-center">
               <div>
                 <Icon.Menu width={3} className="h-8 w-8 text-white" />
@@ -35,6 +35,8 @@ export default function HeaderDetail() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="container relative p-4 sm:px-8 lg:px-24">
           <Spacer className={" h-10 lg:h-20"} />
           <div className="flex">
             <div className="space-y-10 py-10 text-white lg:w-8/12">
