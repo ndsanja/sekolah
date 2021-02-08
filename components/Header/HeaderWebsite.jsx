@@ -10,7 +10,7 @@ export default function HeaderWebsite() {
           </div>
 
           <div className="flex items-center justify-between text-gray-50 space-x-4">
-            <div className="flex items-center space-x-2 px-2 py-2.5 border-gray-600 border-l border-r">
+            <div className="flex items-center space-x-2 px-2 py-2 border-gray-600 border-l border-r">
               <h1 className="uppercase">Menu</h1>
               <div>
                 <Icon.Menu width={2} className="h-7 w-7 bg-contain" />
