@@ -1,11 +1,13 @@
-import React from "react";
+import HeaderWebsite from "../components/Header/HeaderWebsite";
+import NewsFeeds from "../components/News/NewsFeeds";
+import Spacer from "../components/Spacer";
 
 export default function index() {
   return (
-    <div className="container">
-      <button className="rounded px-4 py-1 bg-green-500 focus:outline-none focus:ring-0 ring-green-300 ">
-        Click Me
-      </button>
+    <div className="bg-gray-100">
+      <HeaderWebsite />
+      <Spacer className="h-12" />
+      <NewsFeeds />
     </div>
   );
 }
