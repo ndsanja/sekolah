@@ -5,11 +5,13 @@ export default function Banner() {
         <h1 className="text-white text-xl text-center">
           Get Update On New Course
         </h1>
-        <input
-          type="text"
-          placeholder="Email Addres"
-          className="rounded px-3 py-2 placeholder-gray-700"
-        />
+        <div>
+          <input
+            type="text"
+            placeholder="Email Addres"
+            className="rounded px-3 py-2 placeholder-gray-700"
+          />
+        </div>
         <button className="px-4 py-3 border border-white rounded text-white uppercase text-xs focus:outline-none">
           Subscribe
         </button>
