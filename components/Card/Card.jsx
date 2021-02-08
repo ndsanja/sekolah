@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Card() {
   return (
-    <div className="rounded-lg shadow-lg overflow-hidden text-gray-700">
+    <div className="rounded shadow-lg overflow-hidden text-gray-700">
       <div className="h-52 bg-green-500 overflow-hidden bg-cover bg-center">
         <img
           className="h-full w-full"
@@ -14,13 +14,14 @@ export default function Card() {
         <h4 className="uppercase text-gray-600 font-medium hover:underline cursor-pointer">
           Nature
         </h4>
-        <Link href="/kursus/detail">
-          <a>
-            <h1 className="text-red-800 text-xl sm:text-2xl font-medium hover:underline cursor-pointer">
+        <div>
+          <Link href="/kursus/detail">
+            <a className="text-red-800 text-xl lg:text-2xl font-medium underline lg:no-underline lg:hover:underline cursor-pointer">
               Principles of Biochemistry
-            </h1>
-          </a>
-        </Link>
+            </a>
+          </Link>
+        </div>
+
         <p className="text-gray-600">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea dolores
           error magni labore tenetur tempora beatae veniam consequatur corrupti?

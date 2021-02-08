@@ -6,12 +6,12 @@ import * as Icon from "../Icon";
 export default function HeaderDetail() {
   return (
     <>
-      <div className="bg-blue-900">
+      <div className="bg-bluePrimary">
         <div className="container relative p-4 sm:px-8 lg:px-24">
-          <div className="container p-4 sm:px-8 lg:px-24 flex items-center justify-between py-4 fixed top-0 left-0 right-0 z-10">
+          <div className="container bg-bluePrimary px-4 sm:px-8 lg:px-24 flex items-center justify-between py-3 fixed top-0 left-0 right-0 z-10">
             <div className="flex space-x-4 items-center">
               <div>
-                <Icon.Menu className="h-8 w-8 text-white" />
+                <Icon.Menu width={3} className="h-8 w-8 text-white" />
               </div>
               <div>
                 <Link href="/kursus">
@@ -31,7 +31,7 @@ export default function HeaderDetail() {
                 />
               </div>
               <div>
-                <Icon.Search className="h-8 w-8 text-white" />
+                <Icon.Search width={3} className="h-8 w-8 text-white" />
               </div>
             </div>
           </div>

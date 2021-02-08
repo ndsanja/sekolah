@@ -74,7 +74,7 @@ export const Search = (props) => {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth={2}
+          strokeWidth={props.width}
           d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
         />
       </svg>
@@ -137,7 +137,7 @@ export const Menu = (props) => {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth={2}
+          strokeWidth={props.width}
           d="M4 6h16M4 12h16m-7 6h7"
         />
       </svg>

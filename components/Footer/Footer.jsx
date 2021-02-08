@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-blueDark">
       <div className="container flex items-start justify-around py-12 flex-wrap space-y-4">
         <div className="flex sm:w-6/12 lg:w-4/12 justify-center">
           <button className="px-12 py-2 border border-white rounded text-white focus:outline-none">

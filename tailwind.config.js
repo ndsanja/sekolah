@@ -31,6 +31,9 @@ module.exports = {
       },
       colors: {
         dark: "#262626",
+        blueDark: "#283251",
+        bluePrimary: "#008DD8",
+        blueSecondary: "#73BEE9",
       },
     },
   },

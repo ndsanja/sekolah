@@ -2,11 +2,11 @@ import * as Icon from "../Icon";
 
 export default function Header() {
   return (
-    <div className="  h-60 sm:h-96 relative overflow-hidden items-center flex justify-center">
-      <div className="container p-4 sm:p-8 lg:px-24 flex items-center justify-between py-4 fixed top-0 left-0 right-0 z-10">
+    <div className="h-60 sm:h-96 relative overflow-hidden items-center flex justify-center">
+      <div className="container bg-bluePrimary px-4 sm:px-8 lg:px-24 flex items-center justify-between py-3 fixed top-0 left-0 right-0 z-20">
         <div className="flex space-x-4 items-center">
           <div>
-            <Icon.Menu className="h-8 w-8 text-white" />
+            <Icon.Menu width={3} className="h-8 w-8 text-gray-200" />
           </div>
           <div>
             <button className="hidden lg:block px-4 py-4 border-2 border-white rounded focus:outline-none uppercase text-white text-xs">
@@ -24,7 +24,7 @@ export default function Header() {
             />
           </div>
           <div>
-            <Icon.Search className="h-8 w-8 text-white" />
+            <Icon.Search width={3} className="h-8 w-8 text-gray-200" />
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default function Header() {
       <img
         src="https://online-learning.harvard.edu/sites/all/themes/hoc/static/images/gates.jpg"
         alt=""
-        className="top-0 left-0 right-0 absolute w-screen opacity-80"
+        className="top-0 left-0 right-0 absolute w-screen opacity-80 object-cover object-center"
       />
     </div>
   );
