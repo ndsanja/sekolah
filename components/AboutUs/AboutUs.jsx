@@ -7,7 +7,7 @@ export default function AboutUs() {
     <div className="bg-gray-200 w-full text-gray-700 py-8">
       <div className="container px-4">
         <div className="mb-12 space-y-4">
-          <h1 className="text-2xl font-semibold text-center">
+          <h1 className="text-4xl font-semibold text-center">
             Tentang SMANGAT
           </h1>
           <p className="text-center">
@@ -23,7 +23,7 @@ export default function AboutUs() {
         </div>
         <div className="flex-col items-center space-y-4">
           <Spacer className="h-8" />
-          <button className="py-2 bg-red-900 shadow-lg w-full text-center text-gray-100">
+          <button className="py-4 bg-red-900 shadow-lg w-full text-center text-xl text-gray-100">
             Semua tentang SMANGAT
           </button>
         </div>

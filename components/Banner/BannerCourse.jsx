@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <div className=" bg-bluePrimary py-12">
-      <div className="flex flex-col space-y-6 items-center justify-center ">
+      <div className="flex flex-col space-y-12 items-center justify-center ">
         <h1 className="text-gray-100 text-4xl text-center">
           Explore SMANGAT Online Course and learning contents
         </h1>

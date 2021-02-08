@@ -1,6 +1,7 @@
 import AboutUs from "../components/AboutUs/AboutUs";
 import Akademik from "../components/Akademik/Akademik";
 import BannerCourse from "../components/Banner/BannerCourse";
+import BannerSosol from "../components/Banner/BannerSosok";
 import BannerVideo from "../components/Banner/BannerVideo";
 import Events from "../components/Events/Events";
 import Footer from "../components/Footer/Footer";
@@ -22,6 +23,7 @@ export default function index() {
       <Akademik />
       <BannerCourse />
       <NonAkademik />
+      <BannerSosol />
       <SchoolLife />
       <Ppdb />
       <AboutUs />

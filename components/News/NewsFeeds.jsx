@@ -6,7 +6,7 @@ export default function NewsFeeds() {
   return (
     <div className="bg-bluePrimary w-full text-gray-100 py-8">
       <div className="container px-4">
-        <div className="mb-12">
+        <div className="mb-14">
           <CardNews />
         </div>
         <div className="flex-col items-center space-y-4 px-5">
@@ -15,7 +15,7 @@ export default function NewsFeeds() {
           <CardNews />
           <CardNews />
           <Spacer className="h-8" />
-          <button className="py-2 bg-red-900 shadow-lg w-full text-center">
+          <button className="py-4 bg-red-900 shadow-lg w-full text-center text-xl">
             Lihat Semua Berita
           </button>
         </div>

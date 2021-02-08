@@ -7,7 +7,7 @@ export default function Events() {
     <div className="bg-brown w-full text-gray-100 py-8">
       <div className="container px-4">
         <div className="mb-12">
-          <h1 className="text-2xl font-semibold text-center">Smangat Events</h1>
+          <h1 className="text-4xl font-semibold text-center">Smangat Events</h1>
           <p className="text-center">Lorem ipsum dolor sit amet.</p>
         </div>
         <div className="flex-col items-center space-y-4">
@@ -17,7 +17,7 @@ export default function Events() {
           <CardEvent />
           <CardEvent />
           <Spacer className="h-8" />
-          <button className="py-2 bg-red-900 shadow-lg w-full text-center">
+          <button className="py-4 bg-red-900 shadow-lg w-full text-center text-xl">
             Lihat Semua Events
           </button>
         </div>
