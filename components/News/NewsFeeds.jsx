@@ -1,10 +1,11 @@
 import React from "react";
 import CardNews from "../Card/CardNews";
+import Spacer from "../Spacer";
 
 export default function NewsFeeds() {
   return (
-    <div className="bg-bluePrimary w-full text-gray-100">
-      <div className="container px-4 pt-8">
+    <div className="bg-bluePrimary w-full text-gray-100 py-8">
+      <div className="container px-4">
         <div className="mb-12">
           <CardNews />
         </div>
@@ -13,8 +14,10 @@ export default function NewsFeeds() {
           <CardNews />
           <CardNews />
           <CardNews />
-          <CardNews />
-          <CardNews />
+          <Spacer className="h-8" />
+          <button className="py-2 bg-red-900 shadow-lg w-full text-center">
+            Lihat Semua Berita
+          </button>
         </div>
       </div>
     </div>
