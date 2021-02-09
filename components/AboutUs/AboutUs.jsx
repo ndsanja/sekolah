@@ -21,9 +21,9 @@ export default function AboutUs() {
             in, ab quaerat debitis dolores?
           </p>
         </div>
-        <div className="flex-col items-center space-y-4">
+        <div className="flex-col items-center space-y-4 flex justify-center">
           <Spacer className="h-8" />
-          <button className="py-4 bg-red-900 shadow-lg w-full text-center text-xl text-gray-100">
+          <button className="py-4 bg-red-900 shadow-lg w-full sm:w-3/4 lg:w-2/6 text-center text-xl text-gray-100">
             Semua tentang SMANGAT
           </button>
         </div>

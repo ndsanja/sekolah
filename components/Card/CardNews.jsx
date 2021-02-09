@@ -1,8 +1,8 @@
 export default function CardNews() {
   return (
-    <div>
-      <div className="bg-gray-100 shadow-xl">
-        <div className="h-42 border-b-4 border-bluePrimary overflow-hidden">
+    <div className="shadow-xl">
+      <div className="bg-gray-100">
+        <div className="h-42 border-b-4 lg:border-b-0 border-bluePrimary overflow-hidden">
           <img
             className="object-cover object-center h-full w-full"
             src="https://images.unsplash.com/photo-1611273173182-e4165502fef2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8SnBnNktpZGwtSGt8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
