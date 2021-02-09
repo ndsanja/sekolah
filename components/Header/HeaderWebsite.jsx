@@ -3,7 +3,7 @@ import * as Icon from "../Icon";
 export default function HeaderWebsite() {
   return (
     <div className="">
-      <div className="fixed top-0 left-0 right-0 bg-blueDark">
+      <div className="fixed top-0 left-0 right-0 bg-blueDark z-50">
         <div className="container px-4 flex justify-end items-center relative">
           <div className="absolute left-2 top-0 shadow-2xl">
             <img src="/logo.png" alt="logo" className="w-11" />
