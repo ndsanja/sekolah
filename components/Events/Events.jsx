@@ -4,7 +4,7 @@ import Spacer from "../Spacer";
 
 export default function Events() {
   return (
-    <div className="bg-brown w-full text-gray-100 py-8">
+    <div className="bg-brown w-full text-gray-100 pt-14 pb-20">
       <div className="container px-4">
         <div className="mb-12">
           <h1 className="text-4xl font-semibold text-center">Smangat Events</h1>

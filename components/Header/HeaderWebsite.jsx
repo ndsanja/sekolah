@@ -5,8 +5,8 @@ export default function HeaderWebsite() {
     <div className="">
       <div className="fixed top-0 left-0 right-0 bg-blueDark">
         <div className="container px-4 flex justify-end items-center relative">
-          <div className="absolute left-2 top-1 shadow-2xl">
-            <img src="/logo.png" alt="logo" className="w-10" />
+          <div className="absolute left-2 top-0 shadow-2xl">
+            <img src="/logo.png" alt="logo" className="w-11" />
           </div>
           <div className="flex items-center justify-between text-gray-50 space-x-4">
             <div className="flex items-center space-x-2 px-2 py-2 border-gray-600 border-l border-r">

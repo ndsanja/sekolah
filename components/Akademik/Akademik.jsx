@@ -4,7 +4,7 @@ import Spacer from "../Spacer";
 
 export default function Akademik() {
   return (
-    <div className="bg-gray-50 w-full text-gray-700 py-8">
+    <div className="bg-gray-50 w-full text-gray-700 pt-14 pb-20">
       <div className="container px-4">
         <div className="mb-12 space-y-4">
           <h1 className="text-4xl font-semibold text-center">Akademik</h1>
