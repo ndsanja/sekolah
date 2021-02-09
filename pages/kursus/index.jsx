@@ -7,7 +7,7 @@ import SectionTitle from "../../components/SectionTitle";
 
 export default function index() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 font-body">
       <Header />
       <div className="pt-10">
         <div className="container px-4 sm:px-8 lg:px-24">

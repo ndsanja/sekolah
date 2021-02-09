@@ -12,7 +12,7 @@ import CardDetail from "../../components/Card/CardDetail";
 
 export default function detail() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 font-body">
       <HeaderDetail />
       <Spacer className={"h-4 lg:h-20"} />
       <div className="container px-4 sm:px-10 lg:hidden">
