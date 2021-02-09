@@ -24,7 +24,7 @@ export default function HeaderWebsite() {
         </div>
 
         <div className="bg-blueDark hidden lg:block">
-          <div className="container px-8 lg:flex items-center justify-center text-gray-100 py-2 space-x-8 hidden">
+          <div className="container px-8 lg:flex items-center justify-center text-gray-100 py-2 space-x-8 hidden font-sans">
             <div>lorem</div>
             <div>lorem</div>
             <div>lorem</div>

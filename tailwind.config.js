@@ -37,6 +37,9 @@ module.exports = {
         brown: "#535152",
         brownDark: "",
       },
+      fontFamily: {
+        body: ["Merriweather"],
+      },
     },
   },
   variants: {
