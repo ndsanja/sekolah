@@ -1,13 +1,14 @@
 import React from "react";
 import CardNews from "../Card/CardNews";
+import CardNewsBig from "../Card/CardNewsBig";
 import Spacer from "../Spacer";
 
 export default function NewsFeeds() {
   return (
-    <div className="bg-bluePrimary w-full text-gray-100 pt-8 pb-20">
+    <div className="bg-bluePrimary w-full text-gray-100 pt-10 pb-20">
       <div className="container px-4">
         <div className="mb-14">
-          <CardNews />
+          <CardNewsBig />
         </div>
         <div className="flex-col items-center space-y-4 px-5">
           <CardNews />
