@@ -1,9 +1,28 @@
+import { useState } from "react";
 import * as Icon from "../Icon";
 
 export default function Header() {
+  const [navbar, setNavbar] = useState(false);
+
+  if (typeof window !== "undefined") {
+    const changeBackground = () => {
+      if (window.scrollY >= 300) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeBackground);
+  }
+
   return (
     <div className="h-60 sm:h-96 relative overflow-hidden items-center flex justify-center pt-14">
-      <div className="fixed top-0 left-0 right-0 z-20 bg-bluePrimary">
+      <div
+        className={`fixed top-0 left-0 right-0 z-20 ${
+          navbar && "bg-bluePrimary"
+        }`}
+      >
         <div className="container  px-4 sm:px-8 lg:px-24 flex items-center justify-between py-3 ">
           <div className="flex space-x-4 items-center">
             <div>
@@ -45,7 +64,7 @@ export default function Header() {
             src="https://online-learning.harvard.edu/sites/all/themes/hoc/static/images/gates.jpg"
             alt=""
           />
-          <div className="absolute top-0 bottom-0 right-0 left-0 bg-gray-900 opacity-50"></div>
+          <div className="absolute top-0 bottom-0 right-0 left-0 bg-gray-900 opacity-70"></div>
         </div>
       </div>
     </div>
