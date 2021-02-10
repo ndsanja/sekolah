@@ -55,9 +55,11 @@ export default function HeaderWebsite() {
         </div>
         <div className="bg-gray-50 lg:block">
           <div
-            className={`container px-8 lg:flex items-center justify-evenly text-red-900 py-2 ${
-              navbar ? "text-base" : "text-xl"
-            } hidden`}
+            className={`container px-8 lg:flex items-center  text-red-900 py-2 hidden ${
+              navbar
+                ? "text-base justify-center space-x-24 "
+                : "text-xl justify-evenly"
+            } `}
           >
             <div>lorem ipsum</div>
             <div>lorem ipsum</div>
@@ -65,8 +67,14 @@ export default function HeaderWebsite() {
             <div>lorem ipsum</div>
             <div>lorem ipsum</div>
           </div>
-          <div className="absolute h-32 bg-gray-50 right-1/2 transform translate-x-1/2 top-10 hidden lg:block border border-gray-300">
-            <div className="flex-col items-center justify-center space-y-0 pt-2 pb-1 px-4">
+          <div className="absolute bg-gray-50 right-1/2 transform translate-x-1/2 top-10 hidden lg:block border border-gray-300">
+            <div
+              className={`${
+                navbar
+                  ? ""
+                  : "flex-col items-center justify-center space-y-0 pt-2 pb-1 px-4"
+              }`}
+            >
               <h1
                 className={`text-center text-2xl font-semibold text-blueDark ${
                   navbar ? "hidden" : "block"
@@ -78,7 +86,9 @@ export default function HeaderWebsite() {
             <img
               src="/logo.png"
               alt=""
-              className="h-16 relative left-1/2 -translate-x-1/2 transform"
+              className={`${
+                navbar ? "h-12" : "h-16"
+              } relative left-1/2 -translate-x-1/2 transform`}
             />
           </div>
         </div>

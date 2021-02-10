@@ -40,7 +40,7 @@ export default function Header() {
               <input
                 type="text"
                 placeholder="Search"
-                className="hidden lg:block p-3 w-44 rounded focus:outline-none"
+                className="hidden lg:block p-3 w-44 rounded focus:outline-none bg-gray-100"
               />
             </div>
             <div>
@@ -50,10 +50,10 @@ export default function Header() {
         </div>
       </div>
       <div className="flex-col space-y-4">
-        <h1 className="text-center relative z-10 text-white text-3xl sm:text-5xl lg:text-6xl">
+        <h1 className="text-center relative z-10 text-gray-200 text-3xl sm:text-5xl lg:text-6xl">
           SMA Negeri 1 Srengat
         </h1>
-        <h1 className="text-center relative z-10 text-white text-3xl sm:text-5xl lg:text-6xl">
+        <h1 className="text-center relative z-10 text-gray-200 text-3xl sm:text-5xl lg:text-6xl">
           Online Courses
         </h1>
       </div>
@@ -64,7 +64,7 @@ export default function Header() {
             src="https://online-learning.harvard.edu/sites/all/themes/hoc/static/images/gates.jpg"
             alt=""
           />
-          <div className="absolute top-0 bottom-0 right-0 left-0 bg-gray-900 opacity-70"></div>
+          <div className="absolute top-0 bottom-0 right-0 left-0 bg-gray-900 opacity-50"></div>
         </div>
       </div>
     </div>
