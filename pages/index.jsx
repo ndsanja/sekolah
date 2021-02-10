@@ -14,7 +14,7 @@ import Spacer from "../components/Spacer";
 
 export default function index() {
   return (
-    <div className="bg-gray-50 font-body">
+    <div className="bg-gray-50 font-body font-light">
       <HeaderWebsite />
       <Spacer className="h-10" />
       <NewsFeeds />

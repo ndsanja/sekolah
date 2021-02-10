@@ -37,7 +37,7 @@ export default function HeaderWebsite() {
           </div>
         </div>
 
-        <div className="bg-blueDark hidden lg:block">
+        <div className="bg-blueDark hidden lg:block ">
           <div className="container px-8 lg:flex items-center justify-center text-gray-100 py-2 space-x-8 hidden font-sans">
             <div>lorem</div>
             <div>lorem</div>
@@ -53,22 +53,26 @@ export default function HeaderWebsite() {
             />
           </div>
         </div>
-        <div className="bg-gray-50 lg:block">
+        <div
+          className={`bg-gray-50 lg:block px-10 ${
+            navbar && "border-b-2 border-gray-300"
+          }`}
+        >
           <div
-            className={`container px-8 lg:flex items-center  text-red-900  hidden ${
+            className={`container px-8 lg:flex items-center  text-red-800 hidden ${
               navbar
-                ? "text-base justify-center space-x-24 py-1"
-                : "text-xl justify-evenly py-2"
+                ? "text-base justify-between py-1"
+                : "text-xl justify-between py-4"
             } `}
           >
             <div>lorem ipsum</div>
             <div>lorem ipsum</div>
-            <div className={`${navbar ? "hidden" : "block"}`}>lorem ipsum</div>
+            <div>ipsum</div>
             <div>lorem ipsum</div>
             <div>lorem ipsum</div>
           </div>
 
-          <div className="absolute bg-transparent right-1/2 transform translate-x-1/2 top-10 hidden lg:block z-50">
+          <div className="absolute bg-transparent right-1/2 transform translate-x-1/2 top-10 hidden lg:block z-50 text-blueDark">
             <div
               className={`${
                 navbar
@@ -77,14 +81,14 @@ export default function HeaderWebsite() {
               }`}
             >
               <h1
-                className={`text-center text-2xl font-semibold text-blueDark ${
+                className={`text-center text-4xl font-medium ${
                   navbar ? "hidden" : "block"
                 }`}
               >
                 SMA Negeri 1
               </h1>
               <h1
-                className={`text-center text-xl font-semibold text-blueDark ${
+                className={`text-center text-xl font-medium tracking-wider ${
                   navbar ? "hidden" : "block"
                 }`}
               >
@@ -95,7 +99,7 @@ export default function HeaderWebsite() {
               src="/logo.png"
               alt=""
               className={`${
-                navbar ? "h-10 top-1" : "h-14"
+                navbar ? "h-10 top-1" : "h-16"
               } relative left-1/2 -translate-x-1/2 transform`}
             />
           </div>
@@ -104,14 +108,14 @@ export default function HeaderWebsite() {
               className={`${
                 navbar
                   ? "base-mini transform rotate-180 h-7 w-20"
-                  : "base transform rotate-180 h-20 w-48"
+                  : "base transform rotate-180 h-24 w-72"
               }`}
             ></div>
           </div>
         </div>
       </div>
-      <div className="bg-gray-200 mt-20 hidden lg:block">
-        <div className="container px-8 lg:flex items-center justify-evenly text-red-900 py-2 hidden">
+      <div className="bg-gray-200 mt-24 hidden lg:block px-16 border-b-2 border-gray-300">
+        <div className="container px-8 lg:flex items-center justify-between text-red-800 py-3 hidden">
           <div>lorem ipsum</div>
           <div>lorem ipsum</div>
           <div>lorem ipsum</div>

@@ -5,7 +5,7 @@ import Spacer from "../Spacer";
 
 export default function NewsFeeds() {
   return (
-    <div className="bg-bluePrimary w-full text-gray-100 pt-10 pb-20">
+    <div className="bg-bluePrimary w-full text-gray-100 pt-10 lg:pt-16 pb-20">
       <div className="container px-4 lg:px-8">
         <div className="mb-14">
           <CardNewsBig />
