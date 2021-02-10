@@ -17,7 +17,7 @@ export default function HeaderWebsite() {
   }
   return (
     <div className="">
-      <div className="fixed top-0 left-0 right-0 z-50 ">
+      <div className="fixed top-0 left-0 right-0 z-40 ">
         <div className="bg-blueDark">
           <div className="container px-4 flex justify-end items-center relativ lg:hidden ">
             <div className="absolute left-2 top-0 shadow-2xl lg:hidden">
@@ -55,10 +55,10 @@ export default function HeaderWebsite() {
         </div>
         <div className="bg-gray-50 lg:block">
           <div
-            className={`container px-8 lg:flex items-center  text-red-900 py-2 hidden ${
+            className={`container px-8 lg:flex items-center  text-red-900  hidden ${
               navbar
-                ? "text-base justify-center space-x-24 "
-                : "text-xl justify-evenly"
+                ? "text-base justify-center space-x-24 py-1"
+                : "text-xl justify-evenly py-2"
             } `}
           >
             <div>lorem ipsum</div>
@@ -67,7 +67,8 @@ export default function HeaderWebsite() {
             <div>lorem ipsum</div>
             <div>lorem ipsum</div>
           </div>
-          <div className="absolute bg-gray-50 right-1/2 transform translate-x-1/2 top-10 hidden lg:block border border-gray-300">
+
+          <div className="absolute bg-transparent right-1/2 transform translate-x-1/2 top-10 hidden lg:block z-50">
             <div
               className={`${
                 navbar
@@ -80,16 +81,32 @@ export default function HeaderWebsite() {
                   navbar ? "hidden" : "block"
                 }`}
               >
-                SMA Negeri 1 Srengat
+                SMA Negeri 1
+              </h1>
+              <h1
+                className={`text-center text-xl font-semibold text-blueDark ${
+                  navbar ? "hidden" : "block"
+                }`}
+              >
+                Srengat
               </h1>
             </div>
             <img
               src="/logo.png"
               alt=""
               className={`${
-                navbar ? "h-12" : "h-16"
+                navbar ? "h-10 top-1" : "h-14"
               } relative left-1/2 -translate-x-1/2 transform`}
             />
+          </div>
+          <div className="absolute top-10 z-40 right-1/2 transform translate-x-1/2 bg-blueSecondary hidden lg:block">
+            <div
+              className={`${
+                navbar
+                  ? "base-mini transform rotate-180 h-7 w-20"
+                  : "base transform rotate-180 h-20 w-48"
+              }`}
+            ></div>
           </div>
         </div>
       </div>
