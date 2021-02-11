@@ -55,7 +55,7 @@ export default function HeaderWebsite() {
         </div>
         <div
           className={`bg-gray-50 lg:block px-10 ${
-            navbar && "border-b-2 border-gray-300"
+            navbar && "lg:border-b-2 lg:border-gray-300"
           }`}
         >
           <div
@@ -114,7 +114,7 @@ export default function HeaderWebsite() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-200 mt-24 hidden lg:block px-16 border-b-2 border-gray-300">
+      <div className="bg-gray-200 mt-24 hidden lg:block px-16 lg:border-b-2 lg:border-gray-300">
         <div className="container px-8 lg:flex items-center justify-between text-red-800 py-3 hidden">
           <div>lorem ipsum</div>
           <div>lorem ipsum</div>
