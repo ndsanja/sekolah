@@ -6,7 +6,7 @@ export default function HeaderWebsite() {
 
   if (typeof window !== "undefined") {
     const changeBackground = () => {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 65) {
         setNavbar(true);
       } else {
         setNavbar(false);
