@@ -48,9 +48,12 @@ export default function HeaderDetail() {
                 Inventore cupiditate, quas repellendus iste odit culpa in. Iusto
                 accusamus natus tempora!
               </h4>
-              <button className="px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium">
+              <a
+                href="https://siswa.vercel.app/sekolah/pelajaran/1"
+                className="text-center px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium"
+              >
                 Take Course
-              </button>
+              </a>
             </div>
           </div>
           <CardDetail
