@@ -50,7 +50,8 @@ export default function HeaderDetail() {
               </h4>
               <a
                 href="https://siswa.vercel.app/sekolah/pelajaran/1"
-                className="text-center px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium"
+                target="_blank"
+                className="block text-center px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium"
               >
                 Take Course
               </a>
