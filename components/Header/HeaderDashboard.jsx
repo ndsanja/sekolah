@@ -32,8 +32,8 @@ export default function HeaderDashboard() {
           <div
             className={`${
               open
-                ? "hidden lg:flex items-center justify-between py-2 px-4 border-b border-gray-300 dark:border-gray-700"
-                : "hidden"
+                ? "hidden lg:flex items-center justify-between py-2 px-4 border-b border-gray-300 dark:border-gray-700 transition-all duration-75"
+                : "hidden transition-all duration-75"
             }`}
           >
             <div className="flex items-center space-x-4">

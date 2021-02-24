@@ -27,9 +27,12 @@ export default function detail() {
           <Spacer className={"h-8"} />
           <GoalSection />
           <Spacer className={"h-8"} />
-          <button className="px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium">
+          <a
+            href="https://siswa.vercel.app/sekolah/pelajaran/1"
+            className="flex justify-between items-center px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium"
+          >
             Take Course
-          </button>
+          </a>
           <Spacer className={"h-8"} />
           <h1 className="text-2xl lg:text-4xl text-gray-800">
             Course Descripion
