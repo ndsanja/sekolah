@@ -82,7 +82,6 @@ export default function HeaderDashboard() {
               </a>
               <a
                 href="https://siswa.vercel.app/"
-                target="_blank"
                 className="flex items-center space-x-2 hover:bg-blue-100 dark:hover:bg-blue-800 rounded-full p-2 cursor-pointer"
               >
                 <img
