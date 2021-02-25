@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function GoalSection() {
   return (
     <div className="lg:flex lg:space-x-8 space-y-4 lg:space-y-0">

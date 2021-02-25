@@ -1,4 +1,3 @@
-import React from "react";
 import CardEvent from "../Card/CardEvent";
 import Spacer from "../Spacer";
 

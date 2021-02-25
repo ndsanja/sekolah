@@ -13,11 +13,9 @@ export default function HeaderDetail() {
               <div>
                 <Icon.Menu width={3} className="h-8 w-8 text-white" />
               </div>
-              <div>
+              <div className="hidden lg:inline-block px-4 py-4 border-2 border-white rounded focus:outline-none uppercase text-white text-xs">
                 <Link href="/kursus">
-                  <a className="hidden lg:block px-4 py-4 border-2 border-white rounded focus:outline-none uppercase text-white text-xs">
-                    View All Courses
-                  </a>
+                  <a>View All Courses</a>
                 </Link>
               </div>
             </div>
@@ -50,7 +48,7 @@ export default function HeaderDetail() {
               </h4>
               <a
                 href="https://siswa.vercel.app/sekolah/pelajaran/1"
-                className="block text-center px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium"
+                className="inline-block text-center px-4 py-2 bg-red-900 rounded focus:outline-none uppercase text-white font-medium"
               >
                 Take Course
               </a>
